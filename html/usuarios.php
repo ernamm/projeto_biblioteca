@@ -15,7 +15,7 @@ try {
     <div id="toast"></div>
     <div>
         <div style="text-align:end; margin-right:3%;">
-            <a href="cadastro.php" class=""><span class="material-symbols-outlined" style="color: yellowgreen; font-size:2em;" title="Adiciona Usuario">Add_Box</span></a>
+            <a href="adiciona_usuario.php" class=""><span class="material-symbols-outlined" style="color: yellowgreen; font-size:2em;" title="Adiciona Usuario">Add_Box</span></a>
         </div>
         <?php if (count($lista) > 0) : ?>
             <div id="tabela" style="overflow-x: auto;">
