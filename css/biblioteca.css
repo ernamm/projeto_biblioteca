@@ -512,7 +512,6 @@ input:focus, textarea:focus {
     }
 
     #menu {
-        align-items: stretch;
         margin: 0;
     }
 
