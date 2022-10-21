@@ -16,6 +16,7 @@
     --secundaria: #482673;
     --terciaria: #ed0b70;
     --quartenaria: #301008;
+    --gradient: linear-gradient(to right,#00c4cc, #7c2ae8);
 }
 
 body {
@@ -39,7 +40,7 @@ body {
 
 .material-symbols-outlined {
     /* se quiser modificar os icones do google */
-    color: var(--quartenaria);
+    color: white;
     font-variation-settings:
         'FILL' 1,
         'wght' 400,
@@ -55,7 +56,8 @@ body {
 .nav {
     display: flex;
     /* menu com logo + navegacao flex */
-    background-color: var(--principal);
+    /*background-color: var(--principal);*/
+    background-image: linear-gradient(to right,#00c4cc, #7c2ae8);
     width: 100%;
     /* ocupa a largura disponivel */
     flex-direction: row;
@@ -85,7 +87,7 @@ body {
 
 .logo img {
     width: 100%;
-    padding: 4px 16px;
+    
 }
 
 .cabecalho {
@@ -105,7 +107,7 @@ body {
     padding: 16px;
     text-decoration: none;
     text-align: center;
-    color: var(--quartenaria);
+    color: white;
     margin: 1px;
 
 }
@@ -117,6 +119,12 @@ body {
 
 .cabecalho li a:hover {
     background-color: var(--base);
+    background-image: var(--gradient);
+
+}
+#menu_sair {
+    display: flex;
+    align-items: center;
 }
 
 /* estilizacoes de conteudo */
@@ -126,6 +134,7 @@ body {
 
 .login-box {
     background-color: var(--principal);
+    background-image: var(--gradient);
     padding: 16px;
     border-radius: 10px;
     width: 20%;
@@ -139,7 +148,7 @@ body {
 }
 
 .login-box h1 {
-    color: var(--quartenaria);
+    color: white;
 }
 
 .central {
@@ -161,7 +170,7 @@ h1 {
 }
 
 .form-search span {
-    color: var(--quartenaria);
+    color: white;
 }
 
 .form-search input {
@@ -190,6 +199,7 @@ h1 {
     width: 20%;
     border-radius: 10px;
     background-color: var(--principal);
+    background-image: var(--gradient);
 }
 
 .card-detalhe {
@@ -200,6 +210,7 @@ h1 {
     width: 50%;
     border-radius: 10px;
     background-color: var(--principal);
+    background-image: var(--gradient);
     color: var(--quartenaria);
 }
 
@@ -209,19 +220,21 @@ h1 {
 }
 
 .card img, .card-detalhe img {
-    border-bottom: 1px solid black;
     max-width: 100%;
     height: 200px;
     padding: 4px;
 }
 
 .card-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
     height: 150px;
     overflow: auto;
     padding: 8px;
     text-align: center;
-    color: var(--quartenaria);
+    color: white;
 }
 
 #tabela {
@@ -238,7 +251,7 @@ tr,
 th,
 td {
     border: 1px none black;
-    color: var(--quartenaria);
+    color: white;
     text-align: center;
     border-radius: 10px;
     font-size: 1em;
@@ -251,6 +264,7 @@ table {
 
 caption {
     background-color: var(--terciaria);
+    background-image: var(--gradient);
     padding: 8px;
     border-radius: 10px;
 }
@@ -263,6 +277,7 @@ td {
 
 tr {
     background-color: var(--principal);
+    background-image: var(--gradient);
 }
 
 tbody tr:nth-child(even) {
@@ -286,7 +301,7 @@ tbody tr:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    color: var(--quartenaria);
+    color: white;
     padding: 2%;
     margin: 4px;
     border-radius: 10px;
@@ -295,11 +310,13 @@ tbody tr:hover {
 #valores,
 #visao {
     background-color: var(--principal);
+    background-image: var(--gradient);
 }
 
 #historia,
 #missao {
     background-color: var(--secundaria);
+    background-image: var(--gradient);
 }
 
 #historia:hover,
@@ -326,6 +343,7 @@ tbody tr:hover {
 fieldset {
     margin: 2%;
     background-color: var(--principal);
+    background-image: var(--gradient);
 }
 
 input, textarea {
@@ -350,7 +368,7 @@ input:focus, textarea:focus {
 
 
 .botao {
-    color: var(--quartenaria);
+    color: white;
     padding: 8px;
     border-radius: 8px;
     border: none;
@@ -359,19 +377,19 @@ input:focus, textarea:focus {
 
 .botao a {
     text-decoration: none;
-    color: var(--quartenaria);
+    color: white;
 }
 
 .botao-confirma {
-    background-color: teal;
+    background-color: yellowgreen;
 }
 
 .botao-limpa {
-    background-color: red;
+    background-color: firebrick;
 }
 
 .botao-registrar {
-    background-color: #525252;
+    background-color: darkslategray;
 }
 
 .botao:hover {
@@ -382,12 +400,13 @@ input:focus, textarea:focus {
 
 .rodape {
     background-color: var(--principal);
+    background-image: var(--gradient);
     margin-top: auto;
     min-height: 50px;
     width: 100%;
     padding: 16px;
     border-top: 16px;
-    color: var(--quartenaria);
+    color: white;
 }
 
 /* The snackbar - position it at the bottom and in the middle of the screen */

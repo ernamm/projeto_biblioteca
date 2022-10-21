@@ -15,7 +15,7 @@ try {
     <div id="toast"></div>
     <div>
         <div style="text-align:end; margin-right:3%;">
-            <a href="adiciona_livro.php" class=""><span class="material-symbols-outlined" style="color: teal; font-size:2em;" title="Adiciona Livro">Add_Box</span></a>
+            <a href="adiciona_livro.php" class=""><span class="material-symbols-outlined" style="color: yellowgreen; font-size:2em;" title="Adiciona Livro">Add_Box</span></a>
         </div>
         <?php if (count($lista) > 0) : ?>
             <div id="tabela" style="overflow-x: auto;">
@@ -47,7 +47,7 @@ try {
                                 <td><?= $item['descricao'] ?></td>
                                 <td><?= $item['link'] ?></td>
                                 <td><a href="livro_editar.php?id_livro=<?= $item['id_livro'] ?>"><span class="material-symbols-outlined" title="Editar Livro" style="color: orange;">edit</span></a></td>
-                                <td><a href="livro_excluir_post.php?id_livro=<?= $item['id_livro'] ?>"><span class="material-symbols-outlined" title="Deletar Livro" style="color: red;">delete</span></a></td>
+                                <td><a href="livro_excluir_post.php?id_livro=<?= $item['id_livro'] ?>"><span class="material-symbols-outlined" title="Deletar Livro" style="color: firebrick;">delete</span></a></td>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>

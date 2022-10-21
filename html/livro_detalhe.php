@@ -20,34 +20,41 @@ try {
     <div class="cards-container">
         <div class="card-detalhe">
             <div class="card-header">
-                <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($livro->capa); ?>" alt="#" style="border: none; height:fit-content;">
+                <?php if ($livro->capa != null) : ?>
+                    <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($livro->capa); ?>" alt="#" style="border: none; height:fit-content;">
+                <?php else : ?>
+                    <img src="../img/book.png" alt="">
+                <?php endif ?>
             </div>
             <div class="card-footer" style="text-align:left; height: auto;">
-                <p>
-                    <b>Título:</b> <?= $livro->nome_livro ?>
-                </p>
-                <hr>
-                <p>
-                    <b>Autor:</b> <?= $livro->autor_livro ?>
-                </p>
-                <hr>
-                <p>
-                    <b>Editora:</b> <?= $livro->editora ?>
-                </p>
-                <hr>
-                <p>
-                    <b>Ano:</b> <?= $livro->ano ?>
-                </p>
-                <hr>
-                <p>
-                    <b>Gênero:</b> <?= $livro->gen_livro ?>
-                </p>
-                <hr>
-                <p>
-                    <b>Descrição:</b> <?= $livro->descricao ?>
-                </p>
-                <br>
-                <a style="float: right; margin:2%;" href="<?= $livro->link ?>" class="botao botao-confirma" target="_blank">Ver</a>
+                <div>
+                    <p>
+                        <b>Título:</b> <?= $livro->nome_livro ?>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Autor:</b> <?= $livro->autor_livro ?>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Editora:</b> <?= $livro->editora ?>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Ano:</b> <?= $livro->ano ?>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Gênero:</b> <?= $livro->gen_livro ?>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Descrição:</b> <?= $livro->descricao ?>
+                    </p>
+                </div>
+                <div>
+                    <a style="float: right; margin:2%;" href="<?= $livro->link ?>" class="botao botao-confirma" target="_blank">Ver</a>
+                </div>
             </div>
         </div>
     </div>
